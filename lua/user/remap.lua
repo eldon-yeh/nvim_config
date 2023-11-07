@@ -10,3 +10,5 @@ vim.keymap.set("i", "jk", "<Esc>")
 -- Navigation remaps to center screen
 vim.keymap.set("i", "<C-u>", "<C-u>zz")
 vim.keymap.set("i", "<C-d>", "<C-d>zz")
+vim.api.nvim_set_keymap('n', 'j', 'v:count == 0 ? "gjzz" : "jzz"', {expr = true, noremap = true})
+vim.api.nvim_set_keymap('n', 'k', 'v:count == 0 ? "gkzz" : "kzz"', {expr = true, noremap = true})
