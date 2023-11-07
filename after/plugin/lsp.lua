@@ -19,5 +19,8 @@ cmp.setup {
 	mapping = {
 		['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }), {'i'}),
         ['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), {'i'}),
+        ['<CR>'] = cmp.mapping.confirm({select=false}),
+        ['<C-Space>'] = cmp.mapping.complete(),
 	}
 }
+
