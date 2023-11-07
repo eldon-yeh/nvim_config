@@ -12,3 +12,12 @@ vim.keymap.set("i", "<C-u>", "<C-u>zz")
 vim.keymap.set("i", "<C-d>", "<C-d>zz")
 vim.api.nvim_set_keymap('n', 'j', 'v:count == 0 ? "gjzz" : "jzz"', {expr = true, noremap = true})
 vim.api.nvim_set_keymap('n', 'k', 'v:count == 0 ? "gkzz" : "kzz"', {expr = true, noremap = true})
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- Move blocks with J and K
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- paste without yanking
+vim.keymap.set("x", "<leader>p", [["_dP]])
