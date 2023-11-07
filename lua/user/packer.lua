@@ -26,4 +26,10 @@ return require('packer').startup(function(use)
 
 	-- Harpoon for file navigation
 	use('ThePrimeagen/harpoon')
+
+	-- Harpoon for file navigation
+	use('mbbill/undotree')
+
+	-- Lazygit
+	use({"kdheepak/lazygit.nvim", requires = {"nvim-lua/plenary.nvim",},})
 end)
