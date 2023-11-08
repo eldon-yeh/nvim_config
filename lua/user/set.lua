@@ -28,3 +28,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.clipboard = "unnamedplus"
 -- vim.opt.colorcolumn = "80"
+
+-- Associate .njk to html
+
+vim.cmd([[autocmd BufRead,BufNewFile *.njk set filetype=html]])
