@@ -21,3 +21,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- paste without yanking
 vim.keymap.set("x", "<leader>p", [["_dP]])
+
+-- Control backspace to delete word
+-- Need ctrl h workaround
+vim.keymap.set("i", "<C-BS>", "<C-w>")
+vim.keymap.set("i", "<C-h>", "<C-w>")
