@@ -2,7 +2,16 @@
 vim.g.mapleader = " "
 
 -- Open file explorer
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+-- Netrw
+-- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+-- Neotree
+vim.keymap.set("n", "<leader>e", function()
+	require("neo-tree.command").execute({
+		toggle = true,
+		source = "filesystem",
+		position = "floating",
+	})
+end)
 
 -- Better escape key
 vim.keymap.set("i", "jk", "<Esc>")
