@@ -28,10 +28,10 @@ return require("packer").startup(function(use)
 	-- Harpoon for file navigation
 	use("ThePrimeagen/harpoon")
 
-	-- Harpoon for file navigation
+	-- Undo history
 	use("mbbill/undotree")
 
-	-- Lazygit
+	-- Lazygit - needs local install
 	use({ "kdheepak/lazygit.nvim", requires = { "nvim-lua/plenary.nvim" } })
 
 	-- Mason
@@ -80,5 +80,13 @@ return require("packer").startup(function(use)
 			"MunifTanjim/nui.nvim",
 			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
+	})
+
+	-- Auto pairing brackets
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup({})
+		end,
 	})
 end)
