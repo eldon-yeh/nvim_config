@@ -46,3 +46,7 @@ vim.keymap.set("i", "<C-h>", "<C-w>")
 vim.keymap.set("n", "<leader>c", vim.cmd.bd)
 vim.keymap.set("n", "[b", vim.cmd.bp)
 vim.keymap.set("n", "]b", vim.cmd.bn)
+
+-- Terminal keymaps
+vim.keymap.set("t", "jk", "<C-Bslash><C-n>")
+vim.keymap.set("t", "<Esc>", "<C-Bslash><C-n>")
