@@ -3,18 +3,12 @@ return require("packer").startup(function(use)
     -- Packer can manage itself
     use("wbthomason/packer.nvim")
     use("nvim-lua/plenary.nvim")
-    use({
-        "nvim-telescope/telescope.nvim",
-        tag = "0.1.4"
-    })
-    use({
-        "rose-pine/neovim",
-        as = "rose-pine"
-    })
-    use("nvim-treesitter/nvim-treesitter", {
-        run = ":TSUpdate"
-    })
+    use({ "nvim-telescope/telescope.nvim", tag = "0.1.4" })
+    use({ "rose-pine/neovim", as = "rose-pine" })
+    use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
     use("ThePrimeagen/harpoon")
+    -- essential plugins
+    use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
     -- use("mbbill/undotree")
     use "jiaoshijie/undotree"
     use({ "kdheepak/lazygit.nvim" })
@@ -49,9 +43,6 @@ return require("packer").startup(function(use)
         end
     }
     use 'mfussenegger/nvim-lint'
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
+    use { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
     use 'lewis6991/gitsigns.nvim'
 end)
