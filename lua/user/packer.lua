@@ -6,25 +6,25 @@ return require("packer").startup(function(use)
     use({ "nvim-telescope/telescope.nvim", tag = "0.1.4" })
     use({ "rose-pine/neovim", as = "rose-pine" })
     use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-    use("ThePrimeagen/harpoon")
+    use("ThePrimeagen/harpoon") -- quick file navigation
     -- essential plugins
-    use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+    use("tpope/vim-surround")   -- add, delete, change surroundings (it"s awesome)
     -- use("mbbill/undotree")
-    use "jiaoshijie/undotree"
-    use({ "kdheepak/lazygit.nvim" })
+    use("jiaoshijie/undotree")  -- cleaner undotree
+    use("kdheepak/lazygit.nvim")
     use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v3.x',
+        "VonHeikemen/lsp-zero.nvim",
+        branch = "v3.x",
         requires = {
             --- Uncomment these if you want to manage LSP servers from neovim
-            { 'williamboman/mason.nvim' },
-            { 'williamboman/mason-lspconfig.nvim' },
+            { "williamboman/mason.nvim" },
+            { "williamboman/mason-lspconfig.nvim" },
             -- LSP Support
-            { 'neovim/nvim-lspconfig' },
+            { "neovim/nvim-lspconfig" },
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },
-            { 'hrsh7th/cmp-nvim-lsp' },
-            { 'L3MON4D3/LuaSnip' },
+            { "hrsh7th/nvim-cmp" },
+            { "hrsh7th/cmp-nvim-lsp" },
+            { "L3MON4D3/LuaSnip" },
         }
     }
     use({ "stevearc/conform.nvim" })
@@ -37,12 +37,12 @@ return require("packer").startup(function(use)
     })
     use("windwp/nvim-autopairs")
     use {
-        'numToStr/Comment.nvim',
+        "numToStr/Comment.nvim",
         config = function()
-            require('Comment').setup()
+            require("Comment").setup()
         end
     }
-    use 'mfussenegger/nvim-lint'
-    use { 'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
-    use 'lewis6991/gitsigns.nvim'
+    use("mfussenegger/nvim-lint")
+    use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons", opt = true } }
+    use("lewis6991/gitsigns.nvim")
 end)
