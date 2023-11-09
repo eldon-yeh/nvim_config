@@ -15,7 +15,8 @@ return require("packer").startup(function(use)
         run = ":TSUpdate"
     })
     use("ThePrimeagen/harpoon")
-    use("mbbill/undotree")
+    -- use("mbbill/undotree")
+    use "jiaoshijie/undotree"
     use({ "kdheepak/lazygit.nvim" })
     use {
         'VonHeikemen/lsp-zero.nvim',
