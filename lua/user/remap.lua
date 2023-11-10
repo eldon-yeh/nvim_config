@@ -34,6 +34,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- linewrap
+vim.keymap.set("n", "<leader>wl", ":set wrap!<cr>")
+
 -- paste without yanking
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
