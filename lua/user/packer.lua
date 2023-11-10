@@ -3,16 +3,16 @@ return require("packer").startup(function(use)
     -- Packer can manage itself
     use("wbthomason/packer.nvim")
     use("nvim-lua/plenary.nvim")
-    use({ "nvim-telescope/telescope.nvim", tag = "0.1.4" })
-    use({ "rose-pine/neovim", as = "rose-pine" })
-    use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-    use("ThePrimeagen/harpoon")  -- quick file navigation
+    use({ "nvim-telescope/telescope.nvim", tag = "0.1.4" })       -- fuzzy finder
+    use({ "rose-pine/neovim", as = "rose-pine" })                 -- color scheme
+    use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" }) -- syntax highlighting
+    use("ThePrimeagen/harpoon")                                   -- quick file navigation
     -- essential plugins
-    use("tpope/vim-surround")    -- add, delete, change surroundings (it"s awesome)
-    -- use("mbbill/undotree")
-    use("jiaoshijie/undotree")   -- cleaner undotree
-    use("kdheepak/lazygit.nvim") -- git
-    use("tpope/vim-fugitive")    -- another git
+    use("tpope/vim-surround")                                     -- add, delete, change surroundings (it's awesome)
+    use("jiaoshijie/undotree")                                    -- undotree
+    use("kdheepak/lazygit.nvim")                                  -- git "gui"
+    use("rbong/vim-flog")                                         -- git graph
+    use("tpope/vim-fugitive")                                     -- another git
     use {
         "VonHeikemen/lsp-zero.nvim",
         branch = "v3.x",
@@ -49,5 +49,5 @@ return require("packer").startup(function(use)
     use("lewis6991/gitsigns.nvim")
     use("christoomey/vim-tmux-navigator")
     use("norcalli/nvim-colorizer.lua")
-    use("rbong/vim-flog")
+    use("smjonas/inc-rename.nvim")
 end)
