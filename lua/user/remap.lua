@@ -49,7 +49,7 @@ vim.keymap.set("n", "]b", vim.cmd.bn)
 
 -- Terminal keymaps
 -- vim.keymap.set("t", "jk", "<C-Bslash><C-n>")
-vim.keymap.set("t", "<Esc>", "<C-Bslash><C-n>")
+-- vim.keymap.set("t", "<Esc>", "<C-Bslash><C-n>")
 -- vim.keymap.del("t", "<esc>")
 -- vim.keymap.del("t", "jk")
 
