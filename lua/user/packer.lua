@@ -6,12 +6,13 @@ return require("packer").startup(function(use)
     use({ "nvim-telescope/telescope.nvim", tag = "0.1.4" })
     use({ "rose-pine/neovim", as = "rose-pine" })
     use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-    use("ThePrimeagen/harpoon") -- quick file navigation
+    use("ThePrimeagen/harpoon")  -- quick file navigation
     -- essential plugins
-    use("tpope/vim-surround")   -- add, delete, change surroundings (it"s awesome)
+    use("tpope/vim-surround")    -- add, delete, change surroundings (it"s awesome)
     -- use("mbbill/undotree")
-    use("jiaoshijie/undotree")  -- cleaner undotree
-    use("kdheepak/lazygit.nvim")
+    use("jiaoshijie/undotree")   -- cleaner undotree
+    use("kdheepak/lazygit.nvim") -- git
+    use("tpope/vim-fugitive")    -- another git
     use {
         "VonHeikemen/lsp-zero.nvim",
         branch = "v3.x",
