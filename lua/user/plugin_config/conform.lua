@@ -6,6 +6,8 @@ require("conform").setup({
         -- Use a sub-list to run only the first available formatter
         javascript = { "prettierd" },
         typescript = { "prettierd" },
+        css = { "prettierd" },
+        scss = { "prettierd" },
         -- markdown = { "prettierd" },
     },
     format_on_save = {

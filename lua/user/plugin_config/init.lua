@@ -1,6 +1,7 @@
 require("user.plugin_config.autopairs")
 require("user.plugin_config.autotag")
 require("user.plugin_config.conform")
+require("user.plugin_config.colorizer")
 require("user.plugin_config.cmp")
 require("user.plugin_config.harpoon")
 require("user.plugin_config.lazygit")
