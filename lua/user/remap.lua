@@ -25,10 +25,10 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Easier window navigation
-vim.keymap.set({ "n", "i" }, "<C-j>", "<C-w>j")
-vim.keymap.set({ "n", "i" }, "<C-k>", "<C-w>k")
-vim.keymap.set({ "n", "i" }, "<C-h>", "<C-w>h")
-vim.keymap.set({ "n", "i" }, "<C-l>", "<C-w>l")
+-- vim.keymap.set({ "n", "i" }, "<C-j>", "<C-w>j")
+-- vim.keymap.set({ "n", "i" }, "<C-k>", "<C-w>k")
+-- vim.keymap.set({ "n", "i" }, "<C-h>", "<C-w>h")
+-- vim.keymap.set({ "n", "i" }, "<C-l>", "<C-w>l")
 
 -- Move blocks with J and K
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
