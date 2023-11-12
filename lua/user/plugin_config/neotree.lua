@@ -14,7 +14,7 @@ require("neo-tree").setup({
 -- Hotkey to show neotree
 vim.keymap.set("n", "<leader>e", function()
     require("neo-tree.command").execute({
-        position = "float",
+        position = "current",
         toggle = true,
         source = "filesystem",
         reveal = true,
